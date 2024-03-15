@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; /*this makes 1rem=10px */
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Black: hsl(0, 0%, 8%);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  background-color: var(--Black);
+  color: var(--White);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.jessica-image {
+  width: 10rem;
+  border-radius: 100%;
+  padding: 2.4rem;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.container {
+  background-color: var(--Dark-Grey);
+  --White: hsl(0, 0%, 100%);
+  max-width: 96rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  padding-inline: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.social-media-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn {
+  width: 32rem;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 1.6rem 0;
+  margin-bottom: 2rem;
+
+  border: none;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.3s;
+  justify-content: center;
+  align-content: center;
+}
+
+.btn:hover {
+  background-color: var(--Green);
+  color: var(--Black);
+}
+
+.city-country {
+  color: var(--Green);
+  margin: 1rem 0 2rem 0;
+}
+
+.name {
+  text-align: center;
+  color: var(--White);
+}
+
+.position {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
